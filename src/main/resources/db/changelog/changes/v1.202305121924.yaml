@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet: 
+      id: 28844f8f-736f-4c41-ba81-64322ee8494c
+      author: luisgalrod@gmail.com
+      comment: Update database create new column
+      changes:
+        - tagDatabase:
+            tag:  v1.0
+        - addColumn:
+            tableName: tx_aliases
+            columns:
+            - column:
+                name: gender
+                type: varchar(10)
